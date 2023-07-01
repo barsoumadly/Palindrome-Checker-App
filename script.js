@@ -37,7 +37,7 @@ btnCheck.addEventListener('click', function () {
   }
 
   // Checking word is palindrome
-  isPalindrome(inputEl.value)
+  isPalindrome(inputEl.value.toLowerCase())
     ? performFunction("👌Yes, it's a palindrome!", 'success')
     : performFunction("👎No, it isn't a palindrome!", 'error');
 });
